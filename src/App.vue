@@ -5,8 +5,12 @@ import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + Vite" />
+  <div id="app">
+    <div class="draggable" draggable="true">draggable </div>
+    <div class="dropable" dropzone="move">dropzone</div>
+
+  </div>
+
 </template>
 
 <style>
@@ -17,5 +21,13 @@ import HelloWorld from './components/HelloWorld.vue'
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.draggable {
+  border: red solid 1px;
+}
+
+.dropable{
+  border: blue solid 1px;
 }
 </style>
